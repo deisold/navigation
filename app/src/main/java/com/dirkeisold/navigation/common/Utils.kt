@@ -1,4 +1,4 @@
-package navigation.dirkeisold.com.navigation.common
+package com.dirkeisold.navigation.common
 
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity

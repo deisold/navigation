@@ -5,7 +5,7 @@
     >
     <fragment
         android:id="@+id/homeFragment"
-        android:name="navigation.dirkeisold.com.navigation.usecase.home.HomeFragment"
+        android:name="com.dirkeisold.navigation.usecase.home.HomeFragment"
         android:label="HomeFragment">
 
         <action
@@ -16,7 +16,7 @@
 
     <fragment
         android:id="@+id/homeDetailFragment"
-        android:name="navigation.dirkeisold.com.navigation.usecase.detail.DetailFragment"
+        android:name="com.dirkeisold.navigation.usecase.detail.DetailFragment"
         android:label="HomeDetailFragment">
         <argument
             android:name="FROM"

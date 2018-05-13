@@ -1,4 +1,4 @@
-package navigation.dirkeisold.com.navigation.common
+package com.dirkeisold.navigation.common
 
 interface OnReselectedDelegate {
     fun onReselected()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="navigation.dirkeisold.com.navigation"
+<manifest package="com.dirkeisold.navigation"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application

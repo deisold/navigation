@@ -1,4 +1,4 @@
-package navigation.dirkeisold.com.navigation
+package com.dirkeisold.navigation
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,9 +10,9 @@ import android.widget.FrameLayout
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.FragmentNavigator
+import com.dirkeisold.navigation.common.OnReselectedDelegate
+import com.dirkeisold.navigation.common.or
 import kotlinx.android.synthetic.main.activity_main.*
-import navigation.dirkeisold.com.navigation.common.OnReselectedDelegate
-import navigation.dirkeisold.com.navigation.common.or
 
 class MainActivity : AppCompatActivity() {
 

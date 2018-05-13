@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="navigation.dirkeisold.com.navigation.usecase.dashboard.DashboardFragment"
+        android:name="com.dirkeisold.navigation.usecase.dashboard.DashboardFragment"
         android:label="DashboardFragment"/>
 
 </navigation>

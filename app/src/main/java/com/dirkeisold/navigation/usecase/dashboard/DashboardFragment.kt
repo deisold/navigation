@@ -1,14 +1,14 @@
-package navigation.dirkeisold.com.navigation.usecase.dashboard
+package com.dirkeisold.navigation.usecase.dashboard
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import navigation.dirkeisold.com.navigation.R
-import navigation.dirkeisold.com.navigation.common.OnReselectedDelegate
-import navigation.dirkeisold.com.navigation.common.isSectionVisible
-import navigation.dirkeisold.com.navigation.common.setupActionBar
+import com.dirkeisold.navigation.R
+import com.dirkeisold.navigation.common.OnReselectedDelegate
+import com.dirkeisold.navigation.common.isSectionVisible
+import com.dirkeisold.navigation.common.setupActionBar
 
 class DashboardFragment : Fragment(), OnReselectedDelegate {
 

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="navigation.dirkeisold.com.navigation.usecase.notifications.NotificationFragment"
+        android:name="com.dirkeisold.navigation.usecase.notifications.NotificationFragment"
         android:label="DashboardFragment">
         <action
             android:id="@+id/action_notificationFragment_to_detailFragment"
@@ -15,7 +15,7 @@
 
     <fragment
         android:id="@+id/detailFragment"
-        android:name="navigation.dirkeisold.com.navigation.usecase.detail.DetailFragment"
+        android:name="com.dirkeisold.navigation.usecase.detail.DetailFragment"
         android:label="DetailFragment"/>
 
 </navigation>

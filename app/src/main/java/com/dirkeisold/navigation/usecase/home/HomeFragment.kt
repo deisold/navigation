@@ -1,4 +1,4 @@
-package navigation.dirkeisold.com.navigation.usecase.home
+package com.dirkeisold.navigation.usecase.home
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -8,11 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.Navigation
+import com.dirkeisold.navigation.R
+import com.dirkeisold.navigation.common.OnReselectedDelegate
+import com.dirkeisold.navigation.common.isSectionVisible
+import com.dirkeisold.navigation.common.setupActionBar
 import kotlinx.android.synthetic.main.home_fragment.*
-import navigation.dirkeisold.com.navigation.R
-import navigation.dirkeisold.com.navigation.common.OnReselectedDelegate
-import navigation.dirkeisold.com.navigation.common.isSectionVisible
-import navigation.dirkeisold.com.navigation.common.setupActionBar
 
 class HomeFragment : Fragment(), OnReselectedDelegate {
 
