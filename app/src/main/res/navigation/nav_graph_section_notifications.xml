@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/notificationFragment"
+    >
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="navigation.dirkeisold.com.navigation.usecase.notifications.NotificationFragment"
+        android:label="DashboardFragment">
+        <action
+            android:id="@+id/action_notificationFragment_to_detailFragment"
+            app:destination="@id/detailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="navigation.dirkeisold.com.navigation.usecase.detail.DetailFragment"
+        android:label="DetailFragment"/>
+
+</navigation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/dashboardFragment"
+    >
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="navigation.dirkeisold.com.navigation.usecase.dashboard.DashboardFragment"
+        android:label="DashboardFragment"/>
+
+</navigation>
