@@ -2,7 +2,7 @@
 
 The demo-app shows the usage of the new _Navigation Architecture Component_ in colaboration with the _Bottom Navigation bar_.
 
-##Bottom Navigation
+## Bottom Navigation
 
 The _bottom navigation_ was introduced 2 years ago as a material design pattern. The goal was to give the user quick access to 3-5 top-level destinations in an Android app, but an appropriate implementation was missing for long time.
 Meanwhile Goole introduced the [Bottom Navigation bar](https://material.io/design/components/bottom-navigation.html#usage) as an implementation.  
@@ -13,7 +13,7 @@ But this wasn't the best user experience. Other approaches popped up, like the [
 
 The "new" pattern behavior is about to maintain the view state a user left in one section when navigating back to it.
 
-##Navigation Architecture Component
+## Navigation Architecture Component
 
 With the new [Navigation Architecture Component](https://developer.android.com/topic/libraries/architecture/navigation/) Google introduces a similar concept which uses a `NavHostFragment` hosting a `NavController` operating on a _navigation graph_.
 
@@ -53,7 +53,7 @@ Placing this xml snippet into your Activity gives you access to it's `NavControl
 </navigation>
 ```
 
-##Mastering several view sections of the _Bottom Navigation bar_
+## Mastering several view sections of the _Bottom Navigation bar_
 
 To maintain a fragment backstack for each view section of the _Bottom Navigation bar_ a possible solution would be to use several `NavHostFragments`: 
 
@@ -114,7 +114,7 @@ To maintain a fragment backstack for each view section of the _Bottom Navigation
 ```
 Each navigation host (_NavHostFragment_) contains its own `NavController` based on a specific _Navigation Graph_ and maintains its own Fragment backstack. Initally only the first #FrameLayout# containing the home section will be visible to the user. When switching view sections the appropriate #FrameLayout# will be shown to the user, the others hidden. The view state of each view section backed by a `NavHostFragment` and its `NavController` will be maintained and not changed.
 
-##Android Studio 3.2
+## Android Studio 3.2
 
 The _Android Studio 3.2_ provides a nice graphical editor for designing a _Navigation Graph_.
 
