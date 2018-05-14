@@ -7,7 +7,7 @@ The demo-app shows the usage of the new _Navigation Architecture Component_ in c
 The _bottom navigation_ was introduced 2 years ago as a material design pattern. The goal was to give the user quick access to 3-5 top-level destinations in an Android app, but an appropriate implementation was missing for long time.
 Meanwhile Goole introduced the [Bottom Navigation bar](https://material.io/design/components/bottom-navigation.html#usage) as an implementation.  
 
-The common architectual approach for such a top level navigation would be to make use of Fragments which are added/replaced in a `FrameLayout` serving as a holder in the Activity's view hierarchy. The `FragmentManager` used for dealing with fragments within an Activity only knows _one_ backstack. Building up a backstack for each single view section accessable by the _Bottom Navigation bar_ was impossible. Therefore the "old" pattern behavior was about to remove the whole backstack when the user switched from one section to another.
+The common architectural approach for such a top level navigation would be to make use of Fragments which are added/replaced in a `FrameLayout` serving as a holder in the Activity's view hierarchy. The `FragmentManager` used for dealing with fragments within an Activity only knows _one_ backstack. Building up a backstack for each single view section accessible by the _Bottom Navigation bar_ was impossible. Therefore the "old" pattern behavior was about to remove the whole backstack when the user switched from one section to another.
 
 But this wasn't the best user experience. Other approaches popped up, like the [Conductor framework](https://github.com/bluelinelabs/Conductor) making it possible to maintain different controller-based backstacks attached to different _Router_'s used in one Activity.
 
@@ -112,7 +112,7 @@ To maintain a fragment backstack for each view section of the _Bottom Navigation
             />
     </FrameLayout>
 ```
-Each navigation host (_NavHostFragment_) contains its own `NavController` based on a specific _Navigation Graph_ and maintains its own Fragment backstack. Initally only the first `FrameLayout` containing the home section will be visible to the user. When switching view sections the appropriate `FrameLayout` will be shown to the user, the others hidden. The view state of each view section backed by a `NavHostFragment` and its `NavController` will be maintained and not changed.
+Each navigation host (_NavHostFragment_) contains its own `NavController` based on a specific _Navigation Graph_ and maintains its own Fragment backstack. Initially only the first `FrameLayout` containing the home section will be visible to the user. When switching view sections the appropriate `FrameLayout` will be shown to the user, the others hidden. The view state of each view section backed by a `NavHostFragment` and its `NavController` will be maintained and not changed.
 
 ## Android Studio 3.2
 
