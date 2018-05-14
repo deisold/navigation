@@ -5,7 +5,7 @@ The demo-app shows the usage of the new _Navigation Architecture Component_ in c
 ##Bottom Navigation
 
 The _bottom navigation_ was introduced 2 years ago as a material design pattern. The goal was to give the user quick access to 3-5 top-level destinations in an Android app, but an appropriate implementation was missing for long time.
-Meanwhile Goole introduced the [Bottom Navigation bar] (https://material.io/design/components/bottom-navigation.html#usage) as an implementation.  
+Meanwhile Goole introduced the [Bottom Navigation bar](https://material.io/design/components/bottom-navigation.html#usage) as an implementation.  
 
 The common architectual approach for such a top level navigation would be to make use of Fragments which are added/replaced in a `FrameLayout` serving as a holder in the Activity's view hierarchy. The `FragmentManager` used for dealing with fragments within an Activity only knows _one_ backstack. Building up a backstack for each single view section accessable by the _Bottom Navigation bar_ was impossible. Therefore the "old" pattern behavior was about to remove the whole backstack when the user switched from one section to another.
 
