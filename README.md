@@ -112,7 +112,7 @@ To maintain a fragment backstack for each view section of the _Bottom Navigation
             />
     </FrameLayout>
 ```
-Each navigation host (_NavHostFragment_) contains its own `NavController` based on a specific _Navigation Graph_ and maintains its own Fragment backstack. Initally only the first #FrameLayout# containing the home section will be visible to the user. When switching view sections the appropriate #FrameLayout# will be shown to the user, the others hidden. The view state of each view section backed by a `NavHostFragment` and its `NavController` will be maintained and not changed.
+Each navigation host (_NavHostFragment_) contains its own `NavController` based on a specific _Navigation Graph_ and maintains its own Fragment backstack. Initally only the first `FrameLayout` containing the home section will be visible to the user. When switching view sections the appropriate `FrameLayout` will be shown to the user, the others hidden. The view state of each view section backed by a `NavHostFragment` and its `NavController` will be maintained and not changed.
 
 ## Android Studio 3.2
 
