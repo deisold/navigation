@@ -1,4 +1,4 @@
-# The new Navigation Architecture Component in colaboration with Bottom Navigation bar
+# Mastering the Bottom Navigation with the new _Navigation_ Architecture Component
 
 The demo-app shows the usage of the new _Navigation Architecture Component_ in colaboration with the _Bottom Navigation bar_.
 
