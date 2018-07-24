@@ -9,7 +9,6 @@ import android.view.View
 import android.widget.FrameLayout
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.FragmentNavigator
 import com.dirkeisold.navigation.common.OnReselectedDelegate
 import com.dirkeisold.navigation.common.or
 import kotlinx.android.synthetic.main.activity_main.*
@@ -88,34 +87,13 @@ class MainActivity : AppCompatActivity() {
     private fun onReselected(itemId: Int) {
         when (itemId) {
             R.id.navigation_home -> {
-                val fragmentClassName = (navHomeController.currentDestination as FragmentNavigator.Destination).fragmentClass.simpleName
-
-                navHomeFragment.childFragmentManager.fragments.asReversed().forEach {
-                    if (it.javaClass.simpleName == fragmentClassName && it is OnReselectedDelegate) {
-                        it.onReselected()
-                        return@forEach
-                    }
-                }
+                (navHomeFragment.childFragmentManager.fragments.first { it.isVisible } as OnReselectedDelegate).onReselected()
             }
             R.id.navigation_dashboard -> {
-                val fragmentClassName = (navDashboardController.currentDestination as FragmentNavigator.Destination).fragmentClass.simpleName
-
-                navDashboardFragment.childFragmentManager.fragments.asReversed().forEach {
-                    if (it.javaClass.simpleName == fragmentClassName && it is OnReselectedDelegate) {
-                        it.onReselected()
-                        return@forEach
-                    }
-                }
+                (navDashboardFragment.childFragmentManager.fragments.first { it.isVisible } as OnReselectedDelegate).onReselected()
             }
             R.id.navigation_notifications -> {
-                val fragmentClassName = (navNotificationController.currentDestination as FragmentNavigator.Destination).fragmentClass.simpleName
-
-                navNotificationFragment.childFragmentManager.fragments.asReversed().forEach {
-                    if (it.javaClass.simpleName == fragmentClassName && it is OnReselectedDelegate) {
-                        it.onReselected()
-                        return@forEach
-                    }
-                }
+                (navNotificationFragment.childFragmentManager.fragments.first { it.isVisible } as OnReselectedDelegate).onReselected()
             }
         }
     }
