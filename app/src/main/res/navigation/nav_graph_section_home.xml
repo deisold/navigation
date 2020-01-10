@@ -20,7 +20,7 @@
         android:label="HomeDetailFragment">
         <argument
             android:name="FROM"
-            app:type="string"/>
+            app:argType="string"/>
     </fragment>
 
 </navigation>
