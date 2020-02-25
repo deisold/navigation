@@ -1,5 +1,10 @@
 # Mastering the Bottom Navigation with the new _Navigation_ Architecture Component
 
+[![ci][1]][2]
+
+[1]: https://github.com/deisold/navigation/workflows/ci/badge.svg
+[2]: https://github.com/deisold/navigation/actions
+
 The demo-app shows the usage of the new _Navigation Architecture Component_ in colaboration with the _Bottom Navigation bar_.
 
 ## Bottom Navigation
